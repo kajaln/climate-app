@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
-import ErrorMessage from "./ErrorMessage";
-
+import thuder from '../../assets/images/thunderstorm-day.jpg';
 function WeatherCard({weatherInfo}) {
   //  props = weatherInfo;
-    const [weatherState, setWeatherState] = useState("url(clear.jpg)");
+    const [weatherState, setWeatherState] = useState(`url(${thuder})`);
     const {
         temp,
         humidity,
@@ -58,7 +57,7 @@ function WeatherCard({weatherInfo}) {
             if(currentTime > 18){
                 setWeatherState("url(haze-night.jpg)");  
             } else{
-                setWeatherState("url(haze-day.jpg)");    
+                setWeatherState(`url(${thuder})`);    
             }  
         }
         else if(weatherMood === "Tornado"){

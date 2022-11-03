@@ -1,0 +1,1 @@
+import thunderstormDay from './thunderstorm-day.jpg';
