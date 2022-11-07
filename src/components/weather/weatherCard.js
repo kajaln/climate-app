@@ -53,6 +53,7 @@ function WeatherCard({weatherInfo}) {
         else if(weatherMood === "Snow"){
            setWeatherState("url(heavy-rain.jpg)");    
         }
+        
         else if((weatherMood === "Mist") || (weatherMood === "Smoke") || (weatherMood === "Haze") || (weatherMood === "Dust") || (weatherMood === "Fog") || (weatherMood === "Sand") || (weatherMood === "Dust") || (weatherMood === "Ash") || (weatherMood === "Squall") ){
             if(currentTime > 18){
                 setWeatherState("url(haze-night.jpg)");  
