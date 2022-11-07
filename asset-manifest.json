@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/climate-app.github.io/static/css/main.14ae67d2.css",
+    "main.js": "/climate-app.github.io/static/js/main.df862a80.js",
+    "static/js/787.3bd8780e.chunk.js": "/climate-app.github.io/static/js/787.3bd8780e.chunk.js",
+    "static/media/thunderstorm-day.jpg": "/climate-app.github.io/static/media/thunderstorm-day.63df6554300dd4f63572.jpg",
+    "index.html": "/climate-app.github.io/index.html",
+    "main.14ae67d2.css.map": "/climate-app.github.io/static/css/main.14ae67d2.css.map",
+    "main.df862a80.js.map": "/climate-app.github.io/static/js/main.df862a80.js.map",
+    "787.3bd8780e.chunk.js.map": "/climate-app.github.io/static/js/787.3bd8780e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.14ae67d2.css",
+    "static/js/main.df862a80.js"
+  ]
+}
