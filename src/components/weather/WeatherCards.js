@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import thuder from '../../assets/images/thunderstorm-day.jpg';
 import IMAGES from "../../assets/images/images";
+
 function WeatherCard({weatherInfo}) {
   //  props = weatherInfo;
     const [weatherState, setWeatherState] = useState(`url(${IMAGES.clear})`);
@@ -30,46 +31,46 @@ function WeatherCard({weatherInfo}) {
     useEffect(() => {
         if(weatherMood === "Thunderstorm"){
             if(currentTime > 18){
-                setWeatherState("url(thunderstorm-night.jpg)");  
+                setWeatherState(`url(${IMAGES.thuderstormNight})`);
             } else{
-                setWeatherState("url(thunderstorm-day.jpg)");    
+                setWeatherState(`url(${IMAGES.thuderstormDay})`);
             }
         } else if(weatherMood === "Clouds"){
             if(currentTime > 18){
-                setWeatherState("url(cloud-night.jpg)");  
+                setWeatherState(`url(${IMAGES.cloudNight})`);
             } else{
-                setWeatherState("url(cloud-day.jpg)");    
-            }  
+                setWeatherState(`url(${IMAGES.cloudDay})`);
+            }
         }
         else if(weatherMood === "Drizzle"){
-            setWeatherState("url(heavy-rain.jpg)");    
+            setWeatherState(`url(${IMAGES.rainDay})`);
         }
         else if(weatherMood === "Rain"){
             if(currentTime > 18){
-                setWeatherState("url(heavy-rain.jpg)");  
+                setWeatherState(`url(${IMAGES.rainNight})`);
             } else{
-                setWeatherState("url(rain-day.jpg)");    
-            }  
+                setWeatherState(`url(${IMAGES.rainDay})`);
+            }
         }
         else if(weatherMood === "Snow"){
-           setWeatherState("url(heavy-rain.jpg)");    
+           setWeatherState(`url(${IMAGES.snowNight})`);
         }
-        
+
         else if((weatherMood === "Mist") || (weatherMood === "Smoke") || (weatherMood === "Haze") || (weatherMood === "Dust") || (weatherMood === "Fog") || (weatherMood === "Sand") || (weatherMood === "Dust") || (weatherMood === "Ash") || (weatherMood === "Squall") ){
             if(currentTime > 18){
-                setWeatherState("url(haze-night.jpg)");  
-            } else{
-                setWeatherState(`url(${thuder})`);    
-            }  
+                  setWeatherState(`url(${IMAGES.hazeNight})`);
+			 } else{
+				 setWeatherState(`url(${IMAGES.hazeDay})`);
+            }
         }
         else if(weatherMood === "Tornado"){
             if(currentTime > 18){
-                setWeatherState("url(haze-night.jpg)");  
+                setWeatherState(`url(${IMAGES.hazeNight})`);
             } else{
-                setWeatherState("url(haze-day.jpg)");    
-            }  
+                setWeatherState(`url(${IMAGES.hazeDay})`);
+            }
         } else {
-            setWeatherState("url(clear.jpg)");    
+            setWeatherState(`url(${IMAGES.clear})`);
         }
     },[weatherInfo]);
 
