@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import thuder from '../../assets/images/thunderstorm-day.jpg';
+import IMAGES from "../../assets/images/images";
 function WeatherCard({weatherInfo}) {
   //  props = weatherInfo;
-    const [weatherState, setWeatherState] = useState(`url(${thuder})`);
+    const [weatherState, setWeatherState] = useState(`url(${IMAGES.clear})`);
     const {
         temp,
         humidity,

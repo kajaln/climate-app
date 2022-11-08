@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ErrorMessage from "./ErrorMessage";
 import "./style.css";
-import WeatherCard from "./weatherCard";
+import WeatherCard from "./WeatherCards";
 
 function Temp(props) {
   const [searchValue, setSearchValue] = useState("Nagpur");
@@ -88,7 +88,7 @@ function Temp(props) {
 
         {
           !loading ? (weatherInfo && Object.keys(weatherInfo).length !== 0 &&
-          errorMessage ? <ErrorMessage city={searchValue} /> : <WeatherCard weatherInfo={weatherInfo}  />) 
+          errorMessage ? <ErrorMessage city={searchValue} /> : <WeatherCard weatherInfo={weatherInfo} />) 
           : (
             <div className="weatherInfo">
               <div className="loader-container">
