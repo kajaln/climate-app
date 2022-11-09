@@ -1,15 +1,16 @@
 const IMAGES = {
-    clear: require('./clear.jpg').default,
-    cloudDay: require('./cloud-day.jpg').default,
-    cloudNight: require('./cloud-night.jpg').default,
-    hazeDay: require('./haze-day.jpg').default,
-    hazeNight: require('./haze-night.jpg').default,
-    rainDay: require('./rain-day.jpg').default,
-    rainNight: require('./rain-night.jpg').default,
-    snowDay: require('./snow-night.jpg').default,
-    snowNight:require('./snow-night.jpg').default,
-    thuderstormDay: require('./thunderstorm-day.jpg').default,
-    thuderstormNight: require('./thunderstorm-night.jpg').default,
+    clear: require('./clear.jpg'),
+    cloudDay: require('./cloud-day.jpg'),
+    cloudNight: require('./cloud-night.jpg'),
+    hazeDay: require('./haze-day.jpg'),
+    hazeNight: require('./haze-night.jpg'),
+    rainDay: require('./rain-day.jpg'),
+    rainNight: require('./rain-night.jpg'),
+    snowDay: require('./snow-night.jpg'),
+    snowNight:require('./snow-night.jpg'),
+    thuderstormDay: require('./thunderstorm-day.jpg'),
+    thuderstormNight: require('./thunderstorm-night.jpg'),
+    tornado: require('./tornado.jpg'),
 }
 
 export default IMAGES;

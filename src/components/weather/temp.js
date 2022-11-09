@@ -8,8 +8,6 @@ function Temp(props) {
   const [weatherInfo, setWeatherInfo] = useState({});
   const [loading, setLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
-  //console.log("sdfsdf", weatherInfo);
-  // const [weatherState, setWeatherState] = useState("url(clear.jpg)");
   
 
   const getWeatherInfo = async () => {
@@ -17,8 +15,8 @@ function Temp(props) {
     try {
       let url = `https://api.openweathermap.org/data/2.5/weather?q=${searchValue}&units=metric&appid=1348c249262ed7f1188a6402c6a60922`;
       const response = await fetch(url);
-      // console.log("Response",response);
       const data = await response.json();
+
       if(data){
         setLoading(false);
       }
@@ -47,9 +45,6 @@ function Temp(props) {
         };
         setWeatherInfo(weatherDetails);
        
-        // if(){
-
-        // }
       } catch (error) {
         console.log(error);
       }

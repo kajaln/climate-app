@@ -4,6 +4,7 @@ import IMAGES from "../../assets/images/images";
 
 function WeatherCard({weatherInfo}) {
   //  props = weatherInfo;
+//   console.log("IMAGES",IMAGES)
     const [weatherState, setWeatherState] = useState(`url(${IMAGES.clear})`);
     const {
         temp,
@@ -64,11 +65,7 @@ function WeatherCard({weatherInfo}) {
             }
         }
         else if(weatherMood === "Tornado"){
-            if(currentTime > 18){
-                setWeatherState(`url(${IMAGES.hazeNight})`);
-            } else{
-                setWeatherState(`url(${IMAGES.hazeDay})`);
-            }
+            setWeatherState(`url(${IMAGES.tornado})`);
         } else {
             setWeatherState(`url(${IMAGES.clear})`);
         }
