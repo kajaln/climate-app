@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/climate-app/static/css/main.b76bc478.css",
-    "main.js": "/climate-app/static/js/main.a0d824bd.js",
+    "main.js": "/climate-app/static/js/main.e6c2fd1e.js",
     "static/js/787.3bd8780e.chunk.js": "/climate-app/static/js/787.3bd8780e.chunk.js",
     "static/media/clear.jpg": "/climate-app/static/media/clear.bddc704ec2328a3b0588.jpg",
+    "static/media/tornado.jpg": "/climate-app/static/media/tornado.6c3a152dbb3d38cce2a9.jpg",
     "static/media/haze-night.jpg": "/climate-app/static/media/haze-night.ac959e70569322431015.jpg",
     "static/media/rain-night.jpg": "/climate-app/static/media/rain-night.674e8d39ddb5adf679f1.jpg",
     "static/media/cloud-day.jpg": "/climate-app/static/media/cloud-day.e21c560abc5daec06663.jpg",
@@ -15,11 +16,11 @@
     "static/media/thunderstorm-night.jpg": "/climate-app/static/media/thunderstorm-night.9b6370852a430e4c08c4.jpg",
     "index.html": "/climate-app/index.html",
     "main.b76bc478.css.map": "/climate-app/static/css/main.b76bc478.css.map",
-    "main.a0d824bd.js.map": "/climate-app/static/js/main.a0d824bd.js.map",
+    "main.e6c2fd1e.js.map": "/climate-app/static/js/main.e6c2fd1e.js.map",
     "787.3bd8780e.chunk.js.map": "/climate-app/static/js/787.3bd8780e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b76bc478.css",
-    "static/js/main.a0d824bd.js"
+    "static/js/main.e6c2fd1e.js"
   ]
 }
